@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhookdiscord;
+package dev.pedrolavor.jirawebhooksadapter;
 
 import java.util.TimeZone;
 
@@ -6,11 +6,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JirawebhookdiscordApplication {
+public class JiraWebhooksAdapter {
 
 	public static void main(String[] args) {
 		TimeZone.setDefault(TimeZone.getTimeZone("UTC"));
-		SpringApplication.run(JirawebhookdiscordApplication.class, args);
+		SpringApplication.run(JiraWebhooksAdapter.class, args);
 	}
 
 }

@@ -1,0 +1,21 @@
+{
+  "properties": [
+    {
+      "name": "discord.webhook.test",
+      "type": "java.lang.String",
+      "description": "Controls response compression.",
+      "defaultValue": ""
+    }
+  ],
+  "hints": [
+    {
+      "name": "discord.webhook.test",
+      "values": [
+        {
+          "value": "https://discordapp.com/api/webhooks/${ webhook }/${ token }",
+          "description": "Discord webhook example"
+        }
+      ]
+    }
+  ]
+}

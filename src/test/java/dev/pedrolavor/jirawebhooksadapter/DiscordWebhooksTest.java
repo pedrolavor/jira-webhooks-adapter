@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhookdiscord;
+package dev.pedrolavor.jirawebhooksadapter;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -14,14 +14,11 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
-import lombok.extern.slf4j.Slf4j;
-
-@Slf4j
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class DiscordWebhooksTest {
 
-  @Value("${discord.webhook}")
+  @Value("${discord.webhook.test}")
   private String url;
   
   private HttpEntity<String> createRequest(String body) {
@@ -58,7 +55,6 @@ public class DiscordWebhooksTest {
       RestTemplate restTemplate = new RestTemplate();
       restTemplate.postForEntity(url, createRequest(bodyWrong), null);
     } catch (HttpClientErrorException ex) {
-      log.error(ex.getMessage(), ex);
       assertEquals(400, ex.getRawStatusCode(), "Should return 400: Bad Request when body wrong.");
     }
   }

@@ -30,3 +30,4 @@ build/
 ### VS Code ###
 .vscode/
 jira_bodies/
+google_credentials.json

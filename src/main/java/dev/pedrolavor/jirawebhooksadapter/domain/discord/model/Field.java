@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhooksadapter.discord.model;
+package dev.pedrolavor.jirawebhooksadapter.domain.discord.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -10,13 +10,13 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import dev.pedrolavor.jirawebhooksadapter.discord.model.Post;
-import dev.pedrolavor.jirawebhooksadapter.discord.service.DiscordService;
-import dev.pedrolavor.jirawebhooksadapter.discord.util.DiscordPostBuilder;
-import dev.pedrolavor.jirawebhooksadapter.domain.model.Issue;
-import dev.pedrolavor.jirawebhooksadapter.domain.model.IssueEvent;
-import dev.pedrolavor.jirawebhooksadapter.domain.model.IssueFields;
-import dev.pedrolavor.jirawebhooksadapter.domain.model.User;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.model.Post;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.service.DiscordService;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.util.DiscordPostBuilder;
+import dev.pedrolavor.jirawebhooksadapter.domain.jira.model.Issue;
+import dev.pedrolavor.jirawebhooksadapter.domain.jira.model.IssueEvent;
+import dev.pedrolavor.jirawebhooksadapter.domain.jira.model.IssueFields;
+import dev.pedrolavor.jirawebhooksadapter.domain.jira.model.User;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest

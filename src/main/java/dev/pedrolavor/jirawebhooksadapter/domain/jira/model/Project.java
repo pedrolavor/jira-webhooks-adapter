@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhooksadapter.domain.model;
+package dev.pedrolavor.jirawebhooksadapter.domain.jira.model;
 
 import java.util.Map;
 
@@ -11,15 +11,13 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @Builder
-public class User {
+public class Project {
   
   private String self;
-  private String name;
+  private Long id;
   private String key;
-  private String emailAddress;
+  private String name;
+  private String projectTypeKey;
   private Map<String, String> avatarUrls;
-  private String displayName;
-  private boolean active;
-  private String timeZone;
 
 }

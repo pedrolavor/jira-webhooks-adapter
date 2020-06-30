@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhooksadapter.domain.model;
+package dev.pedrolavor.jirawebhooksadapter.domain.jira.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

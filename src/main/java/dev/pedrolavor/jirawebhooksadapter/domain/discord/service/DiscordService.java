@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhooksadapter.discord.service;
+package dev.pedrolavor.jirawebhooksadapter.domain.discord.service;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -6,7 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
-import dev.pedrolavor.jirawebhooksadapter.discord.model.Post;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.model.Post;
 
 @Service
 public class DiscordService {

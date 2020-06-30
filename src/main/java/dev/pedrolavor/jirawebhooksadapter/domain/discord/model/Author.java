@@ -1,4 +1,4 @@
-package dev.pedrolavor.jirawebhooksadapter.discord.model;
+package dev.pedrolavor.jirawebhooksadapter.domain.discord.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -9,9 +9,11 @@ import lombok.Setter;
 @Getter
 @Setter
 @AllArgsConstructor
-public class Footer {
+public class Author {
 
-  private String text;
+  private String name;
+
+  private String url;
 
   @JsonProperty("icon_url")
   private String iconUrl;

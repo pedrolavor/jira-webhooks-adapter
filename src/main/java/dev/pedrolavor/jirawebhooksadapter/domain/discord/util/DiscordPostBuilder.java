@@ -1,14 +1,14 @@
-package dev.pedrolavor.jirawebhooksadapter.discord.util;
+package dev.pedrolavor.jirawebhooksadapter.domain.discord.util;
 
 import java.util.Arrays;
 
 import org.springframework.stereotype.Service;
 
-import dev.pedrolavor.jirawebhooksadapter.discord.model.Author;
-import dev.pedrolavor.jirawebhooksadapter.discord.model.Embed;
-import dev.pedrolavor.jirawebhooksadapter.discord.model.Footer;
-import dev.pedrolavor.jirawebhooksadapter.discord.model.Post;
-import dev.pedrolavor.jirawebhooksadapter.domain.model.IssueEvent;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.model.Author;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.model.Embed;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.model.Footer;
+import dev.pedrolavor.jirawebhooksadapter.domain.discord.model.Post;
+import dev.pedrolavor.jirawebhooksadapter.domain.jira.model.IssueEvent;
 
 @Service
 public class DiscordPostBuilder {

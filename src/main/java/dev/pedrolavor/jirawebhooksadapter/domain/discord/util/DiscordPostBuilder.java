@@ -16,12 +16,13 @@ public class DiscordPostBuilder {
   public Post newIssue(IssueEvent issueEvent) {
 
     String creatorName = issueEvent.getIssue().getFields().getCreator().getDisplayName();
-    String creatorIconUrl = issueEvent.getIssue().getFields().getCreator().getAvatarUrls().get("24x24");
+    String creatorIconUrl = issueEvent.getIssue().getFields().getCreator().getAvatarUrls().get("48x48");
+    String createUrl = issueEvent.getIssue().getFields().getCreator().getSelf();
     String title = issueEvent.getIssue().getKey() + " - " + issueEvent.getIssue().getFields().getSummary();
     String issueUrl = issueEvent.getIssue().getSelf();
 
     Embed embed = Embed.builder()
-    .author(new Author(creatorName, null, creatorIconUrl))
+    .author(new Author(creatorName, createUrl, creatorIconUrl))
     .title(title)
     .url(issueUrl)
     .description("Hey, there! A new issue has just been created!")

@@ -12,6 +12,10 @@ public class TargetService {
     @Autowired
     private TargetRepository targetRepository;
 
+    public Target findOrThrow(String id) {
+        return targetRepository.find(id);
+    }
+
     public Target save(Target target) {
         return targetRepository.save(target);
     }

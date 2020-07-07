@@ -22,9 +22,11 @@ public class FirestoreConfig {
             new ClassPathResource("google_credentials.json").getInputStream();
         
         GoogleCredentials credentials = GoogleCredentials.fromStream(serviceAccount);
+        
         FirebaseOptions options = new FirebaseOptions.Builder()
             .setCredentials(credentials)
             .build();
+
         FirebaseApp.initializeApp(options);
 
         return FirestoreClient.getFirestore();
